@@ -1,9 +1,9 @@
 # RoomReady
 
 ## Team Roles
-* **[Name]**: [Role/Responsibilities]
-* **[Name]**: [Role/Responsibilities]
-* **[Name]**: [Role/Responsibilities]
+Dr. Valerie Ann Haywood : Dev Lead
+Aaron Tobias: Architect
+Aaron Graf: Product Owner
 
 ## Elevator Pitch
 [Insert a 1-2 sentence description of what RoomReady does and why it matters.]
