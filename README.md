@@ -20,4 +20,5 @@ RoomReady addresses this problem by giving patrons a simple kiosk-style webpage 
 3. [Add run commands]
 
 ## Backlog Link
-[Link to your Jira, Trello, or GitHub Project board here]
+- [Product Backlog v1.0](docs/vision/product-backlog.md)
+
