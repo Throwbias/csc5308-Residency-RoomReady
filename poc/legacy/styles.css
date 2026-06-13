@@ -1,0 +1,116 @@
+:root {
+    --bg-dark: #121212;
+    --bg-panel: #242424;
+    --text-main: #f0f0f0;
+    --neon-green: #39ff14;
+    --neon-red: #ff2a2a;
+    --accent: #00ffff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 2px solid var(--bg-panel);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Room Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.room-card {
+    background-color: var(--bg-panel);
+    padding: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-left: 4px solid gray;
+}
+
+.room-card:hover {
+    transform: translateY(-2px);
+}
+
+.room-card.available {
+    border-left-color: var(--neon-green);
+}
+
+.room-card.booked {
+    border-left-color: var(--neon-red);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.available .status-badge {
+    background-color: rgba(57, 255, 20, 0.1);
+    color: var(--neon-green);
+}
+
+.booked .status-badge {
+    background-color: rgba(255, 42, 42, 0.1);
+    color: var(--neon-red);
+}
+
+/* Forms & UI */
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+}
+
+.form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: black;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--text-main);
+    color: var(--text-main);
+}
