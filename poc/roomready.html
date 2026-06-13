@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomReady | Find your study space</title>
+    <link rel="stylesheet" href="roomready.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="content">
+            <section class="hero-panel">
+                <div class="hero-copy">
+                    <p class="eyebrow">RoomReady</p>
+                    <h1>Find your study space</h1>
+                    <p class="hero-copy__subtext"><span id="available-count">8</span> rooms available right now across campus</p>
+                </div>
+            </section>
+
+            <section class="control-bar">
+                <label class="search-field" for="room-search">
+                    <span class="visually-hidden">Search rooms or buildings</span>
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm9-2.5-4.1-4.1a8 8 0 1 0-1.4 1.4l4.1 4.1a1 1 0 0 0 1.4-1.4Z" fill="currentColor"/></svg>
+                    <input id="room-search" type="search" placeholder="Search rooms or buildings...">
+                </label>
+                <button class="btn btn-filter" id="toggle-filters">Filters</button>
+
+                <div class="filters-panel" id="filters-panel">
+                    <button class="filter-chip" data-filter="all">All</button>
+                    <button class="filter-chip" data-filter="quiet">Quiet</button>
+                    <button class="filter-chip" data-filter="group">Group</button>
+                    <button class="filter-chip" data-filter="presentation">Presentation</button>
+                </div>
+            </section>
+
+            <section class="room-grid">
+                <article class="room-card" data-room-id="1" data-room-status="available" data-room-next="" data-room-features="Whiteboard,Projector,Monitor,Wi-Fi" data-room-location="Hartwell Library · 3rd Floor" data-room-capacity="12">
+                    <div class="room-card__visual">
+                        <img src="assets/room1.jpg" alt="Oak Room study lounge" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-success">Available now</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>The Oak Room</h2>
+                            <span class="room-card__capacity">12</span>
+                        </div>
+                        <p class="room-card__location">Hartwell Library · 3rd Floor</p>
+                        <p>Spacious seminar room with floor-to-ceiling windows and a large central table.</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Whiteboard</span>
+                            <span class="feature-chip">Projector</span>
+                            <span class="feature-chip">Monitor</span>
+                            <span class="feature-chip">Wi-Fi</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="2" data-room-status="available" data-room-next="" data-room-features="Whiteboard,Wi-Fi,Natural Light" data-room-location="STEM Building · 1st Floor" data-room-capacity="6">
+                    <div class="room-card__visual">
+                        <img src="assets/room2.jpg" alt="Innovation Lab A" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-success">Available now</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>Innovation Lab A</h2>
+                            <span class="room-card__capacity">6</span>
+                        </div>
+                        <p class="room-card__location">STEM Building · 1st Floor</p>
+                        <p>Modern collaborative space with height-adjustable desks and dual monitors at each station.</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Whiteboard</span>
+                            <span class="feature-chip">Wi-Fi</span>
+                            <span class="feature-chip">Natural Light</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="3" data-room-status="occupied" data-room-next="3:00 PM" data-room-features="Wi-Fi,Standing Desk,Monitor" data-room-location="Hartwell Library · 2nd Floor" data-room-capacity="2">
+                    <div class="room-card__visual">
+                        <img src="assets/room3.jpg" alt="Quiet Pod 2" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-danger">Occupied</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>Quiet Pod 2</h2>
+                            <span class="room-card__capacity">2</span>
+                        </div>
+                        <p class="room-card__location">Hartwell Library · 2nd Floor</p>
+                        <p>Compact booth for pairs or solo deep work. Sound-dampened walls and soft lighting.</p>
+                        <p class="room-card__next">Next available at 3:00 PM</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Wi-Fi</span>
+                            <span class="feature-chip">Standing Desk</span>
+                            <span class="feature-chip">Monitor</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="4" data-room-status="available" data-room-next="" data-room-features="Whiteboard,Projector,Wi-Fi" data-room-location="Business School · 4th Floor" data-room-capacity="20">
+                    <div class="room-card__visual">
+                        <img src="assets/room4.jpg" alt="Conference Suite A" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-success">Available now</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>Conference Suite A</h2>
+                            <span class="room-card__capacity">20</span>
+                        </div>
+                        <p class="room-card__location">Business School · 4th Floor</p>
+                        <p>Executive-style conference room ideal for presentations, group reviews, or large study sessions.</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Whiteboard</span>
+                            <span class="feature-chip">Projector</span>
+                            <span class="feature-chip">Wi-Fi</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="5" data-room-status="available" data-room-next="" data-room-features="Whiteboard,Natural Light,Wi-Fi" data-room-location="Arts Building · 2nd Floor" data-room-capacity="8">
+                    <div class="room-card__visual">
+                        <img src="assets/room5.jpg" alt="Seminar Room B" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-success">Available now</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>Seminar Room B</h2>
+                            <span class="room-card__capacity">8</span>
+                        </div>
+                        <p class="room-card__location">Arts Building · 2nd Floor</p>
+                        <p>Warm, naturally lit room with a bay window view of the campus quad.</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Whiteboard</span>
+                            <span class="feature-chip">Natural Light</span>
+                            <span class="feature-chip">Wi-Fi</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="6" data-room-status="unavailable" data-room-next="5:00 PM" data-room-features="Wi-Fi,Natural Light,Monitor" data-room-location="Hartwell Library · 4th Floor" data-room-capacity="4">
+                    <div class="room-card__visual">
+                        <img src="assets/room6.jpg" alt="The Reading Room" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-danger">Unavailable</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>The Reading Room</h2>
+                            <span class="room-card__capacity">4</span>
+                        </div>
+                        <p class="room-card__location">Hartwell Library · 4th Floor</p>
+                        <p>A tranquil room surrounded by historic bookshelves — perfect for focused reading or solo writing.</p>
+                        <p class="room-card__next">Next available at 5:00 PM</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Wi-Fi</span>
+                            <span class="feature-chip">Natural Light</span>
+                            <span class="feature-chip">Monitor</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="7" data-room-status="available" data-room-next="" data-room-features="Wi-Fi,Natural Light,Monitor,Standing Desk" data-room-location="STEM Building · Ground Floor" data-room-capacity="10">
+                    <div class="room-card__visual">
+                        <img src="assets/room7.jpg" alt="Maker Space" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-success">Available now</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>Maker Space</h2>
+                            <span class="room-card__capacity">10</span>
+                        </div>
+                        <p class="room-card__location">STEM Building · Ground Floor</p>
+                        <p>Open collaborative workspace with flexible furniture for hackathons, prototyping, or team standups.</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Wi-Fi</span>
+                            <span class="feature-chip">Natural Light</span>
+                            <span class="feature-chip">Monitor</span>
+                            <span class="feature-chip">Standing Desk</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="room-card" data-room-id="8" data-room-status="available" data-room-next="" data-room-features="Wi-Fi" data-room-location="Student Union · 1st Floor" data-room-capacity="1">
+                    <div class="room-card__visual">
+                        <img src="assets/room8.jpg" alt="Quiet Pod 1" loading="lazy">
+                    </div>
+                    <div class="room-card__body">
+                        <div class="room-card__meta">
+                            <span class="room-card__status badge badge-success">Available now</span>
+                        </div>
+                        <div class="room-card__title-row">
+                            <h2>Quiet Pod 1</h2>
+                            <span class="room-card__capacity">1</span>
+                        </div>
+                        <p class="room-card__location">Student Union · 1st Floor</p>
+                        <p>Private phone-booth style pod — ideal for video calls, oral exam prep, or solo focus sessions.</p>
+                        <div class="room-card__features">
+                            <span class="feature-chip">Wi-Fi</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Booking modal -->
+            <div id="booking-modal" class="modal-overlay hidden" aria-hidden="true">
+                <div class="modal-panel" role="dialog" aria-modal="true">
+                    <div class="modal-header">
+                        <h3 id="selected-room-name">Booking</h3>
+                        <div class="booking-room-details">
+                            <p class="booking-room-meta" id="booking-room-meta"></p>
+                            <div class="booking-room-features" id="booking-room-features"></div>
+                        </div>
+                    </div>
+                    <form id="booking-form" class="modal-form">
+                        <input type="hidden" id="room-id-input">
+                        <label for="reserver-name">Your name</label>
+                        <input type="text" id="reserver-name" required>
+
+                        <label for="booking-date">Date</label>
+                        <input type="date" id="booking-date" required>
+
+                        <label for="booking-time">Time</label>
+                        <input type="time" id="booking-time" required>
+
+                        <div class="modal-actions">
+                            <button type="button" class="btn btn-outline" id="cancel-btn">Cancel</button>
+                            <button type="submit" class="btn btn-secondary">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bookings-footer">
+        <div class="bookings-panel">
+            <h2>My Bookings</h2>
+            <div class="bookings-list" id="bookings-list"></div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
