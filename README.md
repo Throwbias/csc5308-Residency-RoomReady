@@ -1,41 +1,24 @@
-# RoomReady - Proof of Concept (Option A)
+# RoomReady: Study Room Reservation System
 
-This directory contains the frontend prototype for RoomReady. The current POC focuses on browsing rooms, viewing room metadata, filtering/searching room cards, and booking via browser-local persistence.
+## Elevator Pitch
+Patrons at the Round Rock Public Library frequently struggle to find available study rooms, leading to frustration and interruptions for library staff. RoomReady is a kiosk-style frontend web application that solves this by allowing library patrons to instantly view current study room availability and self-reserve open rooms without staff mediation.
 
-## The Demo Flow
-During the demo, we will showcase the current prototype flow:
-1. Open `poc/index.html` or `poc/roomready.html` to view the active RoomReady demo.
-2. The page displays room cards with status badges, capacity, location, description, and feature chips.
-3. Use search and filters to narrow rooms by keyword or room type.
-4. Click the book button on an available room to open the booking modal.
-5. Submit the booking form and see the booking saved to `localStorage`, the footer booking list update, and the room status change to `Booked`.
+## The Team
+* **Aaron Graf** — Product Owner
+* **Dr. Valerie Ann Haywood** — Architect
+* **Aaron Tobias** — Dev Lead
 
-## Technical Stack
-* **Frontend:** HTML5, CSS3
-* **Logic & State:** Vanilla JavaScript (ES6)
-* **Persistence:** `localStorage`
+## Product Backlog
+Our user stories, epics, and sprint tasks are tracked via GitHub Projects. 
+* **Live Backlog Board:** [Insert Link to GitHub Projects Board Here]
+* **Markdown Reference:** See `/docs/vision/product-backlog.md` for our raw story point estimations, acceptance criteria, and MoSCoW priorities.
 
-## Current Files
-* `poc/roomready.html` — active entry page for the prototype
-* `poc/roomready.css` — active stylesheet for the prototype
-* `poc/app.js` — booking logic, filters/search, persistence, and UI updates
-* `poc/legacy/` — archived legacy prototype files, including the former `index.html`
+## Repository Structure
+* `/docs/` — Contains all project engineering artifacts, including the Vision Document, Software Requirements Specification (SRS), Architecture Decision Records (ADR-001), and UML diagrams.
+* `/poc/` — Contains the frontend Proof of Concept (HTML, CSS, JS, and image assets).
+* `/retrospectives/` — Contains the individual sprint retrospectives for each team member.
 
-## Local Setup & Run Instructions
+## Proof of Concept (POC)
+The RoomReady POC is a frontend-only prototype demonstrating the core patron reservation workflow. 
 
-Because this is a pure frontend prototype, there are no dependencies to install or servers to configure.
-
-**1. Navigate to the POC directory:**
-\`\`\`bash
-cd poc
-\`\`\`
-
-**2. Run the application:**
-Open `poc/index.html` or `poc/roomready.html` in a browser.
-
-*Optional:* In VS Code, right-click the HTML file and choose **"Open with Live Server"** for a local preview.
-
-## Notes
-* The prototype is static and uses hardcoded room cards plus browser-local storage for bookings.
-* `poc/styles.css` has been archived to `poc/legacy/` and is not used by the current prototype.
-* `poc/roomready.css` is the active stylesheet used by both HTML pages.
+👉 **[See `/poc/README.md` for local setup and live demo run instructions.](./poc/README.md)**
