@@ -1,0 +1,11 @@
+## 1. What was the hardest decision your team made today, and how did you resolve it?
+The hardest decision we faced was deciding which features to prioritize for our 5-hour build. We debated including a complex admin portal for event coordinators, but ultimately decided to strictly limit our scope to the patron’s walk-up booking flow. By prioritizing the "Must Have" functional requirements (FR-01 through FR-03) and deferring features such as long-term calendar management, we ensured we had a functional, end-to-end prototype ready for Sunday’s presentation.
+
+## 2. How did using AI tools change your workflow? What did you have to be careful about?
+Integrating AI tools like Gemini for troubleshooting, Figma’s AI for UI design, and Grammarly for writing accelerated our workflow but required oversight. We used these tools as assistants, verifying all code, design, and docs against requirements. Ensuring team members understood the system allowed us to justify decisions, uphold writing standards, and explain code logic to faculty. 
+
+## 3. What would you build next if you had two more hours on the POC?
+If we had two more hours on the POC, I would prioritize implementing server-side input sanitization and basic authentication checks. While the current prototype relies on user trust, I would want to ensure that all reservation data is rigorously validated against the library's business rules to prevent injection attacks or malicious data overrides. Strengthening the backend to strictly enforce these validation layers would be a critical step toward transforming our current frontend-focused prototype into a secure, production-grade system. 
+
+## 4. How does today connect to what you will be doing in Weeks 1–4 of the semester?
+Today’s experience shapes our approach in Weeks 1–4, offering a quick overview of project setup, documentation, and Git rules essential for future complex system development. Learning to decompose large projects into manageable POCs prepares us for the course's demanding requirements. This sprint demonstrated that good project governance, even for a small team, is crucial for transforming ideas into reality within limited time frames.
